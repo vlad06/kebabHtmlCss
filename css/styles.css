@@ -1,0 +1,69 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  border: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+header .logo {
+  width: 75%;
+  margin-left: 2rem;
+
+}
+.contact-connect {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-main {
+  border: 1px solid red;
+  vertical-align: center;
+  display: flex;
+}
+.menu {
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu li {
+  margin: 0 2rem;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+.social li {
+  margin: 0 1rem;
+
+}
+footer .logo {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid green;
+}
+footer hr {
+  border: 1px solid grey;
+}
+footer {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+footer > * {
+  border-right: 1px solid black;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}

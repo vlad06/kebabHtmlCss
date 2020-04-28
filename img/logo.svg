@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100mm"
+   height="50mm"
+   viewBox="0 0 100 50"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6109">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6105" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6107" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4640"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4636" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4638" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4618">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4614" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4616" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4618"
+       id="linearGradient4620"
+       x1="55.698574"
+       y1="105.76098"
+       x2="165.64565"
+       y2="105.76098"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6109"
+       id="linearGradient6113"
+       x1="59.753078"
+       y1="70.383743"
+       x2="179.99319"
+       y2="70.383743"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6092275"
+     inkscape:cx="448.25919"
+     inkscape:cy="216.96931"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Base_logo"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-247)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot16"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion18"><rect
+           id="rect20"
+           width="148.57143"
+           height="54.285713"
+           x="258.57144"
+           y="311.09113" /></flowRegion><flowPara
+         id="flowPara22" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.83109283px;line-height:1.25;font-family:'Hobo Std';-inkscape-font-specification:'Hobo Std';letter-spacing:0px;word-spacing:0px;opacity:1;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0.43246642;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1"
+       x="3.7221723"
+       y="253.75375"
+       id="text26"
+       transform="scale(0.92076275,1.0860561)"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         x="3.7221723"
+         y="253.75375"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.83109283px;font-family:'Hobo Std';-inkscape-font-specification:'Hobo Std';text-align:start;letter-spacing:1.51363242px;text-anchor:start;fill:#800000;stroke:#000000;stroke-width:0.43246642;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1"
+         dx="0"
+         rotate="0 0">KEBAB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.75838661px;line-height:1.25;font-family:'Hobo Std';-inkscape-font-specification:'Hobo Std';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0.43246642;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="4.1397018"
+       y="294.93985"
+       id="text30"><tspan
+         sodipodi:role="line"
+         id="tspan28"
+         x="4.1397018"
+         y="294.93985"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.75838661px;font-family:'Hobo Std';-inkscape-font-specification:'Hobo Std';writing-mode:lr-tb;direction:ltr;fill:#800000;stroke:#000000;stroke-width:0.43246642;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         rotate="0 0 0 0 0 0">EXPRESS</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4644"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion4646"><rect
+           id="rect4648"
+           width="515.4068"
+           height="318.43607"
+           x="154.29376"
+           y="181.16362" /></flowRegion><flowPara
+         id="flowPara4650" /></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="ombrage"
+     transform="translate(0,-247)" />
+</svg>
