@@ -3,43 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Bienvenue</title>
 </head>
 <body>
+	<!-- Background video -->
+		<video autoplay muted loop id="myVideo">
+			<source src="video/grillade.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
 
 	<div class="wrapper grid-container">
 
 		<header>
-
+			
 			<ul class="contact-connect">
 				<li>
-					Contactez-nous : 04 93 15 48 97
+					<a href="indexKebab.html">
+						<img class="logo" src="img/logo.svg" alt="Logo Kebab Express" />
+					</a>
 				</li>
 				<li>
-					<ul class="social">
-						<li><a href="#"><img src="" alt="Yelp" /></a></li>
-						<li><a href="#"><img src="" alt="Trip advisor" /></a></li>
-						<li><a href="#"><img src="" alt="Twitter" /></a></li>
-						<li><a href="#"><img src="" alt="Facebook" /></a></li>
+					<ul class="connect">
+						<li>
+							<a href="">Connexion </a>
+						</li>
+						<li>
+							<a href="">Créez un compte </a>
+						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="">connectez-vous / créez un compte</a>
-				</li>
 			</ul>
-						
 			
-			<nav class="nav-main">
-				<a href="indexKebab.html">
-					<img class="logo" src="img/logo.svg" alt="Logo Kebab Express" />
-				</a>
-				
-				<ul class="menu">
+			<nav class="flex-nav">
+				<ul>
+					
 					<li><a href="#">ACCUEIL</a></li>
 					<li><a href="#">CARTE ET MENU</a></li>
-					<li><a href="#">QUESTIONNAIRE DE SATISFACTION</a></li>
-				</ul>
+					<li><a href="#">QUESTIONNAIRE</a></li>
+					<li class="social"><a href="#"><i class="fa fa-yelp"></i></a></li>
+					<li class="social"><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
+					<li class="social"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="social"><a href="#"><i class="fa fa-facebook"></i></a></li>
+					</ul>
 			</nav>
 			
 		</header>

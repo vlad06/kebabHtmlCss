@@ -2,75 +2,122 @@ html {
   font-size: 10px;
   box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
 .grid-container {
   display: grid;
-  grid-template-columns: 2rem repeat(9, auto) 2rem;
-  grid-template-rows: 1fr 2fr auto 4fr;
+  grid-template-columns: 2rem repeat(9, 1fr) 2rem;
+  grid-template-rows: auto auto auto;
 }
 header {
   grid-column: 2 / 11;
   grid-row: 1;
-  border: 1px solid pink;
+  border: 1px solid orangered;
 }
 main {
-  grid-column: 2 / 7;
+  grid-column: 2 / 8;
   grid-row: 2;
   border: 1px solid goldenrod;
 }
 aside {
-  grid-column: 7 / 11;
+  grid-column: 8 / 11;
   grid-row: 2;
   border: 1px solid blue;
-
 }
 footer {
   grid-column: 2 / 11;
   grid-row: 3;
 }
 
-ul {
-  list-style: none;
-}
 .wrapper {
   border: 2px solid black;
-  width: 80%;
+  background:rgba(0,0,0,0.2);
+  max-width: 90%;
   margin: 0 auto;
   font-size: 2rem;
 }
-header .logo {
-  width: 200px;
-  margin-left: 2rem;
-  border: 1px solid blue;
-}
+
 .contact-connect {
+  list-style-type: none;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-}
-.nav-main {
-  border: 1px solid red;
-  vertical-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.menu {
-  width: 100%;
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
-.menu li {
-  margin: 0 2rem;
+
+.contact-connect .logo {
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 160px;
+  border: 1px solid blue;
 }
+
+.contact-connect a {
+  text-decoration: none;
+}
+.connect {
+  list-style: none;
+}
+
+.flex-nav a {
+    color:white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:rgba(0,0,0,0.2);
+    padding: 2rem .5rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition:all 0.5s;
+}
+.flex-nav a:hover {
+  background:rgba(0,0,0,0.5);
+}
+
+.flex-nav ul {
+  border: 1px solid black;
+  font-size: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.flex-nav li {
+  flex-grow: 3;
+}
+.flex-nav .social {
+  flex-grow: 1;
+}
+
 .social {
+  list-style: none;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .social li {
   margin: 0 1rem;
-
 }
-
+article {
+  color: white;
+  background-image: url("../img/vegan-background.jpg");
+}
 footer .logo {
   width: 33%;
   margin-left: auto;
@@ -112,4 +159,22 @@ footer > * {
 .column {
   flex-basis: 32%;
   padding: 0 2px;
+}
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  .flex-nav li {
+    flex: 1 1 33%;
+  }
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
 }
