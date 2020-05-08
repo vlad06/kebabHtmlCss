@@ -26,17 +26,14 @@ body {
 header {
   grid-column: 2 / 11;
   grid-row: 1;
-  border: 1px solid orangered;
 }
 main {
   grid-column: 2 / 8;
   grid-row: 2;
-  border: 1px solid goldenrod;
 }
 aside {
   grid-column: 8 / 11;
   grid-row: 2;
-  border: 1px solid blue;
 }
 footer {
   grid-column: 2 / 11;
@@ -45,26 +42,25 @@ footer {
 
 .wrapper {
   border: 2px solid black;
-  background:rgba(0,0,0,0.2);
-  max-width: 90%;
+  background:rgba(0, 0, 0, 0.5);
+  max-width: 80%;
   margin: 0 auto;
   font-size: 2rem;
+  color: white;
 }
 
-.contact-connect {
+.entete {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid rgb(133, 133, 133); */
 }
 
-.contact-connect .logo {
-  margin-bottom: auto;
-  margin-top: auto;
-  width: 160px;
-  border: 1px solid blue;
+.entete .logo {
+  width: 200px;
 }
 
 .contact-connect a {
@@ -74,6 +70,17 @@ footer {
   list-style: none;
 }
 
+.entete_deux a, footer a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 2rem .5rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
 .flex-nav a {
     color:white;
     font-weight: 100;
@@ -86,8 +93,9 @@ footer {
     text-align: center;
     transition:all 0.5s;
 }
-.flex-nav a:hover {
-  background:rgba(0,0,0,0.5);
+
+.entete_deux a:hover, .flex-nav a:hover, footer a:hover {
+  background:rgba(0, 0, 0, 0.5);
 }
 
 .flex-nav ul {
@@ -114,33 +122,40 @@ footer {
 .social li {
   margin: 0 1rem;
 }
-article {
-  color: white;
-  background-image: url("../img/vegan-background.jpg");
+
+footer {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
 }
-footer .logo {
-  width: 33%;
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .logo, footer img {
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 footer hr {
   border: 1px solid grey;
 }
-footer {
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-}
+
 
 footer > * {
-  border-right: 1px solid black;
+  /* border-right: 1px solid black; */
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 25%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.col1, .col2, .col3 {
+  border-right: 2px solid white;
 }
 
 .column img {
@@ -152,12 +167,12 @@ footer > * {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2px;
+  /* padding: 0 2px; */
 }
 
 /* Create 3 equal columns that sits next to each other */
 .column {
-  flex-basis: 32%;
+  flex-basis: 33%;
   padding: 0 2px;
 }
 
@@ -177,4 +192,107 @@ footer > * {
   .flex-nav li {
     flex-basis: 100%;
   }
+  .wrapper {
+    font-size: 1.6rem;
+  }
 }
+
+/* Page index avec background video */
+
+.home-logo {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.open-menu-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+  width: 28px;
+}
+
+.menu-button:hover {
+  opacity: 0.8;
+}
+/* Overlay style */
+ .overlay {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay .overlay-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 9999;
+  overflow: hidden;
+  width: 28px;
+  height: 28px;
+  outline: none;
+  border: none;
+  color: transparent;
+  text-indent: 200%;
+}
+
+.overlay-close img {
+  width: 100%;
+}
+.overlay-close img:hover {
+  opacity: 0.6;
+}
+
+.overlay nav {
+  position: relative;
+  text-align: center;
+}
+.overlay ul {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.overlay ul li {
+  display: block;
+}
+.overlay ul li a {
+  display: inline-block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 63px;
+  line-height: 86px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.overlay ul li a:hover, .overlay ul li a:focus {
+  outline: none;
+}
+.overlay ul li a:hover {
+  color: rgb(160, 34, 34);
+}
+/* Effects */
+.overlay-hugeinc {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-hugeinc.open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+} 

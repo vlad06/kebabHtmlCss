@@ -9,37 +9,32 @@
 </head>
 <body>
 	<!-- Background video -->
-		<video autoplay muted loop id="myVideo">
+		<!-- <video autoplay muted loop id="myVideo">
 			<source src="video/grillade.mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
-		</video>
+		</video> -->
 
 	<div class="wrapper grid-container">
 
 		<header>
-			
-			<ul class="contact-connect">
-				<li>
+			<div class="entete grid-entete">
+				<div class="entete_un">
 					<a href="indexKebab.html">
 						<img class="logo" src="img/logo.svg" alt="Logo Kebab Express" />
 					</a>
-				</li>
-				<li>
+				</div>
+				<div class="entete_deux">
 					<ul class="connect">
-						<li>
-							<a href="">Connexion </a>
-						</li>
-						<li>
-							<a href="">Créez un compte </a>
-						</li>
+						<li><a href="">Connexion </a></li>
+						<li><a href="">Créez un compte </a></li>
 					</ul>
-				</li>
-			</ul>
+				</div>
+			</div>
+			
 			
 			<nav class="flex-nav">
 				<ul>
-					
-					<li><a href="#">ACCUEIL</a></li>
+					<li><a href="indexKebab.html">ACCUEIL</a></li>
 					<li><a href="#">CARTE ET MENU</a></li>
 					<li><a href="#">QUESTIONNAIRE</a></li>
 					<li class="social"><a href="#"><i class="fa fa-yelp"></i></a></li>
@@ -112,7 +107,7 @@
 		<aside>
 
 			<!-- Photo Grid -->
-			<div class="row"> 
+			<!-- <div class="row"> 
 				<div class="column">
 					<img src="img/mosaique/am1.jpg">
 					<img src="img/mosaique/tac5.gif">
@@ -141,7 +136,7 @@
 					<img src="img/mosaique/tac11.jpg">
 					<img src="img/mosaique/tac3.png">
 				</div>
-			</div>
+			</div> -->
 
 		</aside>
 
@@ -162,28 +157,34 @@
 			</div>
 			<!-- <hr /> -->
 			<div class="col2">
-				<img src="" alt="droneDeLivraison" />
-				<p>
-					Livraison sur toute la France en moins d'une heure par drone.
-					Livraison gratuite pour 20€ d'achat.
-				</p>
+				<img src="img/drone.png" alt="droneDeLivraison" />
+				<ul>
+					<li>Livraison sur toute la France en moins d'une heure par drone.</li>
+					<li>Livraison gratuite pour 20€ d'achat.</li>
+				</ul>
+
+				
 			</div>
 			<!-- <hr /> -->
 			<div class="col3">
 				<p>
-					<strong>Horaires</strong> </p>
-				<p>	Du lundi au dimanche de 11h à 15h et de 17h à 6h
+					<strong>Horaires</strong>
 				</p>
-				<img src="" alt="paiement sécurisé" />
+				<ul>
+					<li>Du lundi au dimanche</li>
+					<li>de 11h à 15h et de 17h à 6h</li>
+				</ul>
+				
+				<p>	 
+				</p>
+				<img src="img/paiement_securise_grande.png" alt="paiement sécurisé" />
 			</div>
 			<!-- <hr /> -->
 			<div class="col4">
 				<p>
-					<strong>Contactez-nous</strong></p>
-				<p>	04 93 15 48 97</p>
-				<p>
-					contact@kebab-express.com
+					<a href="mailto:contact@kebab-express.com"><strong>contact@kebab-express.com</strong></a>
 				</p>
+				<p>	04 93 15 48 97</p>
 			</div>
 			
 		</footer>
