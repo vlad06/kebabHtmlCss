@@ -5,6 +5,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+@font-face {
+  font-family: "uni_sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../font/uni_sans_heavy_italic-webfont.woff2") format("woff2");
+}
 body {
   margin: 0;
 }
@@ -27,22 +33,29 @@ header {
   grid-column: 2 / 11;
   grid-row: 1;
 }
+.carousel { 
+  grid-column: 2 / 11;
+  grid-row: 2;
+}
+
 main {
   grid-column: 2 / 8;
-  grid-row: 2;
+  grid-row: 3;
 }
 aside {
   grid-column: 8 / 11;
-  grid-row: 2;
+  grid-row: 3;
 }
 footer {
   grid-column: 2 / 11;
-  grid-row: 3;
+  grid-row: 4;
 }
 
 .wrapper {
   border: 2px solid black;
-  background:rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("../img/back2.jpg");
+  background-size: 100%;
   max-width: 80%;
   margin: 0 auto;
   font-size: 2rem;
@@ -68,6 +81,7 @@ footer {
 }
 .connect {
   list-style: none;
+  font-family: "uni_sans", Helvetica, sans-serif;
 }
 
 .entete_deux a, footer a {
@@ -81,23 +95,27 @@ footer {
   text-align: center;
   transition:all 0.5s;
 }
-.flex-nav a {
-    color:white;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-decoration: none;
-    background:rgba(0,0,0,0.2);
-    padding: 2rem .5rem;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    transition:all 0.5s;
-}
+
 
 .entete_deux a:hover, .flex-nav a:hover, footer a:hover {
   background:rgba(0, 0, 0, 0.5);
 }
 
+.flex-nav a {
+    color:white;
+    font-family: "uni_sans", Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:rgba(0,0,0,0.2);
+    padding: 2rem .5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    transition:all 0.5s;
+}
 .flex-nav ul {
   border: 1px solid black;
   font-size: 2rem;
@@ -107,12 +125,46 @@ footer {
   display: flex;
 }
 .flex-nav li {
-  flex-grow: 3;
+  flex-grow: 4;
 }
 .flex-nav .social {
   flex-grow: 1;
 }
+/* queries for the nav menu */
+@media all and (max-width: 1100px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  .flex-nav li {
+    flex: 1 1 25%;
+  }
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1050px) {
+    .flex-nav ul {
+      flex-wrap: wrap;
+    }
+    .flex-nav li {
+      flex: 1 1 50%;
+    }
+    .flex-nav .social {
+      flex: 1 1 25%;
+    }
+}
 
+@media all and (max-width: 600px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+  .wrapper {
+    font-size: 1.8rem;
+  }
+  main {
+    grid-column: 2 / 11;
+  }
+}
 .social {
   list-style: none;
   display: flex;
@@ -127,6 +179,7 @@ footer {
   border: 1px solid white;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 footer ul {
   list-style-type: none;
@@ -134,71 +187,72 @@ footer ul {
 }
 
 footer .logo, footer img {
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  /* border: 1px solid green; */
 }
 footer hr {
   border: 1px solid grey;
 }
 
 
-footer > * {
-  /* border-right: 1px solid black; */
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 25%;
-  margin: 1rem;
+footer > div {
+  margin: 0;
+  flex-wrap: wrap;
+  flex: 1 1 20%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
+
 .col1, .col2, .col3 {
   border-right: 2px solid white;
 }
-
-.column img {
-  width: 100%;
+.col2 ul {
+  margin: 1rem;
 }
-.column img:hover {
-  transform: scale(1.5);
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  /* padding: 0 2px; */
-}
-
-/* Create 3 equal columns that sits next to each other */
-.column {
-  flex-basis: 33%;
-  padding: 0 2px;
+.col3 {
+  text-align: center;
 }
 
 @media all and (max-width: 1000px) {
-  .flex-nav ul {
-    flex-wrap: wrap;
+  footer > div {
+    flex: 1 1 50%;
   }
-  .flex-nav li {
-    flex: 1 1 33%;
+  .col1 {
+    border-bottom: 2px solid white;
   }
-  .flex-nav .social {
-    flex: 1 1 25%;
+  .col2 {
+    border-right: none;
+    border-bottom: 2px solid white;
+  }
+  .col2 ul {
+    margin: 1rem;
+  }
+  .col3 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (max-width: 700px) {
+  footer > div {
+    flex: 1 1 100%;
+  }
+  .col1 {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col3 {
+    border-right: none;
+    border-bottom: 2px solid white;
   }
 }
 
-@media all and (max-width: 800px) {
-  .flex-nav li {
-    flex-basis: 100%;
-  }
-  .wrapper {
-    font-size: 1.6rem;
-  }
-}
+/************ Page index avec background video **********************/
 
-/* Page index avec background video */
-
+/* le logo du site centré devant la vidéo */
 .home-logo {
   max-width: 300px;
   max-height: 300px;
@@ -207,92 +261,130 @@ footer > * {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.open-menu-button {
+/* le bouton pour ouvrir le menu overlay */
+.open-menu-btn img{
   position: absolute;
   top: 25px;
   right: 25px;
-  z-index: 2;
-  width: 28px;
+  width: 40px;
+}
+.open-menu-btn:hover {
+  opacity: 0.5;
+}
+/* le bouton pour fermer le menu overlay */
+.close-menu-btn img{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 40px;
+}
+.close-menu-btn:hover {
+  opacity: 0.5;
 }
 
-.menu-button:hover {
-  opacity: 0.8;
-}
-/* Overlay style */
- .overlay {
+.overlay {
+  height: 0%;
+  width: 100%;
   position: fixed;
-  visibility: hidden;
+  z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  font-family: "uni_sans", Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #800000;
+}
+/*query for the overlay menu */
+@media all and (max-width: 600px) {
+  .overlay-content {
+    font-size: 45px;
+  }
 }
 
-.overlay .overlay-close {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  z-index: 9999;
-  overflow: hidden;
-  width: 28px;
-  height: 28px;
-  outline: none;
-  border: none;
-  color: transparent;
-  text-indent: 200%;
-}
+/******************PAGE ACCUEIL AVEC CAROUSEL****************/
 
-.overlay-close img {
+.cell img {
+  vertical-align: middle;
   width: 100%;
 }
-.overlay-close img:hover {
+.row img {
+  width: 100%;
+}
+
+.carousel {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 90%;
+}
+
+.cell {           /* les images sont cachées par défaut */
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 10px;
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 1 1 16.66%;
+}
+.demo {
   opacity: 0.6;
 }
 
-.overlay nav {
-  position: relative;
-  text-align: center;
-}
-.overlay ul {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-.overlay ul li {
-  display: block;
-}
-.overlay ul li a {
-  display: inline-block;
-  color: #FFF;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 63px;
-  line-height: 86px;
-  transition: color 0.2s;
-  text-decoration: none;
-}
-.overlay ul li a:hover, .overlay ul li a:focus {
-  outline: none;
-}
-.overlay ul li a:hover {
-  color: rgb(160, 34, 34);
-}
-/* Effects */
-.overlay-hugeinc {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s, visibility 0s 0.5s;
-}
-.overlay-hugeinc.open {
-  visibility: visible;
+.active, .demo:hover {
   opacity: 1;
-  transition: opacity 0.5s;
-} 
+}
